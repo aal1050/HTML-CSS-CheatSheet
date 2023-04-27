@@ -1,0 +1,85 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-attachment:fixed;
+    background-color: aliceblue;
+    background-image:url("./resources/images/olaf-huttemann-KQvFT4xc-gQ-unsplash.jpg"); 
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size: 100% auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: darkslategray;
+  }
+  
+  h2 {
+    color: black;
+    text-align: center;
+  }
+  
+  table {
+    border: 2px solid lightslategrey;
+    width: 95%;
+    margin: 0 auto;
+   
+  }
+  
+  thead {
+    background-color: lightslategrey;
+    color:beige;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td {
+    border-top: 1px solid silver;
+    border-right: 1px solid silver;
+    font-size: larger;
+    
+  }
+
+  .example {
+    font-size: small;
+  }
+
+  .example p {
+    margin: 0, auto;
+    line-height: .5;
+  }
+
+  .example .highlight {
+    background-color: yellow;
+    padding: 2px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .name, .bold, .title {
+    font-weight: bold;
+  }
+
+  .note {
+    font-size: medium;
+    font-style: italic;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+  
+  #selectors table {
+    table-layout: fixed;
+  }
+  #selectors td {
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  #rules td {
+    padding-left: 10px;
+  }
+
+  
+  

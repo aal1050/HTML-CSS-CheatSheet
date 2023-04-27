@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML and CSS Cheat Sheet</title>
+  <link href="./styles.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>HTML and CSS Cheat Sheet</h1>
+    </header>
+    <main>
+        <!-- CSS Selectors -->
+        <section id="selectors">
+        <h2>CSS Selectors<br><span class="note">*Listed from highest to lowest specificity.</span></h2>
+        
+        <table>
+          <!-- CSS Selector Table - Column Headers -->
+          <thead>
+            <th>Selector Name</th>
+            <th>CSS Syntax</th>
+            <th>Description</th>
+            <th>Example</th>
+          </thead>
+          <tbody>
+
+            <!-- ID Selector Row -->
+            <tr>
+              <td><span class="name">ID</span> Selector</td>
+              <td><em>#IDname</em> { }<p style="font-style: italic;font-size:medium">A hash (#) charater followed by the name of the ID.</p></td>
+              <td>Selects elements with a specific <span class="bold italic">ID</span> attribute. </td>
+              <td class="example">
+                  <p class="title">HTML:</p>
+                  <p>&lt;section <span class="highlight">id='jounal'</span>&gt;</p><p>Text of the jounal entry ...&lt;/p&gt;</p>
+                  <p class="title">CSS:</p>
+                  <p><span class="highlight">#jounal</span> { font-family: cursive; } </p>
+                  <p class="title">Result:</p>
+                  <p style="font-family:cursive;">Text of the jounal entry ...</p>                    
+              </td>
+            </tr>
+            
+            <!-- Class Selector Row -->
+            <tr>
+              <td><span class="name">Class</span> Selector</td>
+              <td><em>.classname</em> { }<p class="note">A period (.) charater followed by the name of the class.</p></td>
+              <td>Selects elements with a specific <span class="bold italic">class</span> attribute. </td>
+              <!-- <td></td>-->
+              <td class="example">
+                  <p class="title">HTML:</p>
+                  <p>&lt;p <span class="highlight">class='brand'</span>&gt;</p><p>Sole Shoe Company&lt;/p&gt;</p>
+                  <p class="title">CSS:</p>
+                  <p><span class="highlight">.brand</span> {  text-transform: uppercase; } </p>
+                  <p class="title">Result:</p>
+                  <p>SOLE SHOE COMPANY</p>                    
+              </td>
+           </tr>
+                     
+            <!-- Element Type Selector Row -->
+            <tr>
+                <td><span class="name">Type</span> Selector<br>(aka <span class="name">Element Type</span> Selector)</td>
+                <td><em>element</em> { }</td>
+                <td>Selects elements based on the html <span class="bold italic">element type</span> (e.g. &lt;h1&gt;, &lt;p&gt;, &lt;body&gt;).</td>
+                <!-- <td></td>-->
+                <td class="example">
+                    <p class="title">HTML:</p>
+                    <p><span class="highlight">&lt;h1&gt;</span>This is the text for H1.&lt;/h1&gt;</p>
+                    <p>&lt;p&gt;This is the text for p.&lt;/p&gt;</p>
+                    <p class="title">CSS:</p>
+                    <p><span class="highlight">h1</span> { color: blue; } </p>
+                    <p class="title">Result:</p>
+                    <p style="color:blue;">This is the text for H1.</p>
+                    <p>This is the text for p.</p>
+                </td>
+                <!--<td>add link to additional Info</td>-->
+              </tr>
+              
+            <!-- Universal Selector - Row -->
+            <tr>
+              <td><span class="name">Universal</span> Selector</td>
+              <td><em>*</em> { }</td>
+              <td>Selects <span class="bold italic">all</span> elements of <span class="bold italic">any</span> type.</td>
+              <td class="example">
+                <p class="title">HTML:</p>
+                <p>&lt;h1&gt;This is the text for H1.&lt;/h1&gt;</p>
+                <p>&lt;p&gt;This is the text for p.&lt;/p&gt;</p>
+                <p class="title">CSS:</p>
+                <p><span class="highlight">*</span> { color: blue; } </p>
+                <p class="title">Result:</p>
+                <p style="color:blue;">This is the text for H1.</p>
+                <p style="color:blue;">This is the text for p.</p>
+            </td>
+              
+            </tr>
+              
+            
+           </tbody>
+        </table>
+        </section>
+
+        <!-- CSS Specificity Rules Table-->
+        <section id="rules">
+        <h2>CSS Specificity Rules</h2>
+        <table>
+          <thead>
+            <th>#</th>
+            <th>Rule</th>
+            <!--<th>Example</th>
+            <th>Additional Info.</th>-->
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rule 1:</td>
+              <td>The CSS selector with the higher specificity applies.</td>
+             
+            </tr>
+            <tr>
+                <td>Rule 2:</td>
+                <td>If CSS selectors have equal specificity, then the last rule in the document applies.</td>
+                
+              </tr>
+              <tr>
+                <td>Rule 3:</td>
+                <td>Inline CSS has the highest specificity.</td>
+                
+              </tr>
+              <tr>
+                <td>Rule 4:</td>
+                <td>the <span class="bold italic">!important</span> property overrides all other declarations on an element including inlne declarations.</td>
+                
+              </tr>
+           </tbody>
+        </table>
+        </section>
+    </main>
+  
+</body>
+</html>
